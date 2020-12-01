@@ -4,7 +4,7 @@
   "description": "A sample application showing how your users can sign in to your Next.js application using the Auth0 SPA SDK",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start"
   },

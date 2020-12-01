@@ -17,11 +17,11 @@ const requireAuth = jwt({
     cache: true,
     rateLimit: true,
     jwksRequestsPerMinute: 5,
-    jwksUri: `https://${process.env.AUTH0_DOMAIN}/.well-known/jwks.json`
+    jwksUri: `https://${process.env.AUTH0_DOMAIN}/.well-known/keys`
   }),
 
   audience: process.env.AUTH0_API_IDENTIFIER,
-  issuer: `https://${process.env.AUTH0_DOMAIN}/`,
+  issuer: `https://${process.env.ISSUER}/`,
   algorithm: ['RS256']
 });
 

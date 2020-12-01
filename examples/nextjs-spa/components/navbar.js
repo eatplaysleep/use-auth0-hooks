@@ -7,7 +7,6 @@ import { useAuth } from 'use-auth0-hooks';
 export default function NavBar() {
   const { pathname, query } = useRouter();
   const { isAuthenticated, isLoading, login, logout } = useAuth();
-
   return (
     <header>
       <nav>
@@ -41,7 +40,7 @@ export default function NavBar() {
               </>
             ) : (
               <li>
-                <button onClick={() => login({ appState: { returnTo: { pathname, query } } })}>
+                  <button onClick={() => login({ appState: { returnTo: { pathname, query } } })}>
                   Log in
                 </button>
               </li>

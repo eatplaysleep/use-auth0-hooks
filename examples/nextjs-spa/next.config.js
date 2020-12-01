@@ -1,9 +1,11 @@
 module.exports = {
   env: {
-    API_BASE_URL: 'https://tv-shows-api.now.sh',
-    AUTH0_DOMAIN: 'nextjs-auth0-demo.auth0.com',
-    AUTH0_CLIENT_ID: '3OnFkR1n5hy6z8rsYqxycE6RoLJx4xq5',
-    REDIRECT_URI: 'https://nextjs-spa-auth0-demo.now.sh',
-    POST_LOGOUT_REDIRECT_URI: 'https://nextjs-spa-auth0-demo.now.sh'
+    // API_BASE_URL: 'https://tv-shows-api.now.sh',
+    API_BASE_URL: 'http://localhost:3001',
+    AUTH0_DOMAIN: 'identity-dev.mgmresorts.com/oauth2/ausk4d0yoLYEONwH04x6/v1',
+    ISSUER: 'identity-dev.mgmresorts.com/oauth2/ausk4d0yoLYEONwH04x6',
+    AUTH0_CLIENT_ID: 'mgm_app_web',
+    REDIRECT_URI: 'http://localhost:3000/',
+    POST_LOGOUT_REDIRECT_URI: 'http://localhost:3000/'
   }
 }
