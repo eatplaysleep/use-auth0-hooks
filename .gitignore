@@ -60,3 +60,4 @@ typings/
 # Distribution directories
 dist/
 .next
+.vercel
